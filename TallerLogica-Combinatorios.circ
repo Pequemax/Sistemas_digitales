@@ -15,7 +15,13 @@
   </lib>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -526,6 +532,7 @@
     <wire from="(670,90)" to="(720,90)"/>
     <wire from="(550,190)" to="(600,190)"/>
     <wire from="(590,90)" to="(640,90)"/>
+    <wire from="(250,300)" to="(310,300)"/>
     <wire from="(470,290)" to="(520,290)"/>
     <wire from="(530,80)" to="(590,80)"/>
     <wire from="(640,330)" to="(700,330)"/>
@@ -583,6 +590,7 @@
     <wire from="(210,120)" to="(210,140)"/>
     <wire from="(210,140)" to="(210,160)"/>
     <wire from="(460,280)" to="(460,360)"/>
+    <wire from="(340,300)" to="(450,300)"/>
     <wire from="(580,140)" to="(580,220)"/>
     <wire from="(150,370)" to="(190,370)"/>
     <wire from="(140,180)" to="(180,180)"/>
@@ -607,7 +615,6 @@
     <wire from="(230,170)" to="(300,170)"/>
     <wire from="(610,280)" to="(610,330)"/>
     <wire from="(460,60)" to="(720,60)"/>
-    <wire from="(250,300)" to="(450,300)"/>
     <wire from="(550,120)" to="(560,120)"/>
     <wire from="(620,190)" to="(630,190)"/>
     <comp lib="0" loc="(130,180)" name="Pin">
@@ -642,6 +649,7 @@
       <a name="width" val="4"/>
       <a name="label" val="S"/>
     </comp>
+    <comp lib="1" loc="(340,300)" name="NOT Gate"/>
     <comp lib="0" loc="(130,280)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
